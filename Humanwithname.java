@@ -2,6 +2,11 @@ public class Humanwithname {
     private Name name;
     private int height;
 
+    public Humanwithname (Name name, int height) {
+        this.name = name;
+        this.height = height;
+    }
+
     public void setName(Name name) {
         this.name = name;
     }
