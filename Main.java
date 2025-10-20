@@ -5,56 +5,34 @@ public class Main {
     public static void main(String[] args){
 
         System.out.println("Задание 1. Задача 2");
-        Human human1 = new Human();
-        human1.setName("Клеопатра");
-        human1.setHeight(152);
+        Human human1 = new Human("Клеопатра", 152);
 
-        Human human2 = new Human();
-        human2.setName("Пушкин");
-        human2.setHeight(167);
+        Human human2 = new Human("Пушкин", 167);
 
-        Human human3 = new Human();
-        human3.setName("Владимир");
-        human3.setHeight(189);
+        Human human3 = new Human("Владимир", 189);
 
         System.out.println(human1);
         System.out.println(human2);
         System.out.println(human3);
 
         System.out.println("\nЗадание 1. Задача 3");
-        Name name1 = new Name();
-        name1.setName("Клеопатра");
+        Name name1 = new Name("Клеопатра");
 
-        Name name2 = new Name();
-        name2.setSurname("Пушкин");
-        name2.setName(" Александр ");
-        name2.setPatronymic("Сергеевич");
+        Name name2 = new Name("Пушкин", " Александр ", "Сергеевич");
 
-        Name name3 = new Name();
-        name3.setSurname("Маяковский");
-        name3.setName(" Владимир ");
-
-        Name name4 = new Name();
-        name4.setPatronymic("Александровна");
+        Name name3 = new Name("Маяковский", " Владимир ");
 
         System.out.println(name1);
         System.out.println(name2);
         System.out.println(name3);
-        System.out.println(name4);
 
         System.out.println("\nЗадание 2. Задача 2");
 
-        Humanwithname humanwithname1 = new Humanwithname();
-        humanwithname1.setName(name1);
-        humanwithname1.setHeight(152);
+        Humanwithname humanwithname1 = new Humanwithname(name1, 152);
 
-        Humanwithname humanwithname2 = new Humanwithname();
-        humanwithname2.setName(name2);
-        humanwithname2.setHeight(167);
+        Humanwithname humanwithname2 = new Humanwithname(name2, 167);
 
-        Humanwithname humanwithname3 = new Humanwithname();
-        humanwithname3.setName(name3);
-        humanwithname3.setHeight(189);
+        Humanwithname humanwithname3 = new Humanwithname(name3, 189);
 
         System.out.println(humanwithname1);
         System.out.println(humanwithname2);
